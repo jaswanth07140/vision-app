@@ -1,4 +1,4 @@
-# Vision Web — the Linux app for vision.page.gd
+# Vision — the Linux app for vision.page.gd
 
 A tiny app file that opens [vision.page.gd](https://vision.page.gd/) the way
 OpenCode opens: in its own window, no tabs, no address bar — just Vision.
@@ -11,7 +11,7 @@ cd vision-app
 bash install.sh
 ```
 
-That puts a **Vision Web** entry in your app launcher and a `vision-web`
+That puts a **Vision** entry in your app launcher (with the Vision ring icon) and a `vision-web`
 command in `~/.local/bin`. Total size: a few kilobytes. It uses the
 Chromium-family browser already on the machine (Chrome, Chromium, Brave,
 Edge), with its own small profile folder so the app window stays separate
@@ -33,6 +33,6 @@ cd vision-app && git pull && bash install.sh
 ## What's in here
 
 - `vision-web` — the launcher script (opens the site in app mode)
-- `Vision Web.desktop` — the app-launcher entry
+- `Vision.desktop` — the app-launcher entry (named just "Vision")
 - `vision-web.png` — the Vision ring icon
 - `install.sh` — puts the three files in the right places
