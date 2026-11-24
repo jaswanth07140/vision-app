@@ -1,0 +1,12 @@
+#!/bin/bash
+# Vision Web — open vision.page.gd as a standalone app window (no tabs,
+# no address bar), the way OpenCode opens as its own app. Uses the first
+# Chromium-family browser found; falls back to the default browser.
+URL="https://vision.page.gd/"
+PROFILE="$HOME/.local/share/vision-web-profile"
+for B in google-chrome google-chrome-stable chromium chromium-browser brave-browser microsoft-edge; do
+  if command -v "$B" >/dev/null 2>&1; then
+    exec "$B" --app="$URL" --user-data-dir="$PROFILE" >/dev/null 2>&1
+  fi
+done
+exec xdg-open "$URL"
