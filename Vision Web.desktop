@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Vision Web
-Comment=Vision — vision.page.gd as a standalone app
-Exec=vision-web
-Icon=vision-web
-Terminal=false
-Categories=Network;WebBrowser;
-StartupWMClass=vision.page.gd
